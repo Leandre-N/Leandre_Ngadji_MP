@@ -837,6 +837,12 @@ select {
     gap: 30px;
 }
 
+.projects-footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
 
 /* CARTE */
 
