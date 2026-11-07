@@ -395,7 +395,7 @@ select {
 /* CV */
 
 .hero-cv {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     gap: 9px;
 
@@ -407,7 +407,12 @@ select {
     color: #102A43;
     text-decoration: underline;
 
-    cursor: default;
+    cursor: pointer;
+}
+
+.hero-cv:hover,
+.about-cv:hover {
+    opacity: 0.9;
 }
 
 .cv-icon {
@@ -1049,6 +1054,63 @@ select {
    7. RESPONSIVE TABLETTE
 ========================================== */
 
+@media (min-width: 851px) and (max-width: 900px) {
+    .navbar {
+        height: 70px;
+    }
+
+    .nav-container {
+        padding: 0 22px;
+    }
+
+    .nav-menu {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        padding: 15px 22px;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 5px;
+        background: #fff;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-10px);
+        transition: 0.3s ease;
+    }
+
+    .nav-menu.show {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+
+    .nav-link {
+        padding: 13px 15px;
+        font-size: 14px;
+    }
+
+    .nav-options {
+        margin-left: auto;
+        margin-right: 20px;
+    }
+
+    .hamburger {
+        width: 44px;
+        height: 44px;
+        display: grid;
+        place-content: center;
+        flex: 0 0 44px;
+    }
+
+    .hamburger span {
+        width: 24px;
+        margin: 3px 0;
+    }
+}
+
 @media (max-width: 1100px) {
 
     .nav-container {
@@ -1174,7 +1236,16 @@ select {
     }
 
     .hamburger {
-        display: block;
+        width: 44px;
+        height: 44px;
+        display: grid;
+        place-content: center;
+        flex: 0 0 44px;
+    }
+
+    .hamburger span {
+        width: 24px;
+        margin: 3px 0;
     }
 
 
@@ -1493,6 +1564,34 @@ select {
         padding: 18px;
     }
 
+}
+
+@media (max-width: 360px) {
+    .nav-container {
+        padding-right: 12px;
+        padding-left: 12px;
+    }
+
+    .logo {
+        gap: 0;
+    }
+
+    .logo-name {
+        display: none;
+    }
+
+    .nav-options {
+        gap: 6px;
+        margin-right: 8px;
+    }
+
+    .language-selector {
+        padding: 4px 6px;
+    }
+
+    .theme-toggle {
+        width: 42px;
+    }
 }
 
 
