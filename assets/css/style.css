@@ -886,6 +886,24 @@ select {
     background: #eef3fa;
 }
 
+.project-image.project-image-salleevent {
+    height: 380px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f0e9fa;
+}
+
+.project-image.project-image-salleevent img {
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.project-card:hover .project-image.project-image-salleevent img {
+    transform: none;
+}
+
 .project-image-tenysy {
     background: #06152d;
 }
