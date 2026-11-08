@@ -195,11 +195,23 @@ const englishTranslations = {
     "Projet mobile & backend": "Mobile & backend project",
     "Application mobile conçue pour faciliter le suivi des prises de médicaments grâce à des rappels personnalisés, afin d’aider les utilisateurs à mieux respecter leurs prescriptions médicales.": "A mobile app that helps users keep track of their medication with personalized reminders, supporting adherence to prescriptions.",
     "Technologies utilisées pour SantéVibes": "Technologies used for SantéVibes",
+    "Découvrir SantéVibes": "Explore SantéVibes",
+    "Aperçu de l’interface SantéVibes montrant le suivi familial des traitements et des prises de médicaments": "SantéVibes interface preview showing family treatment and medication tracking",
+    "Le suivi des traitements, en famille.": "Family medication tracking, made simple.",
+    "Prenez soin de vos proches, simplement.": "Care for your loved ones, simply.",
+    "SantéVibes est une application mobile de suivi familial des prises de médicaments. Elle aide à organiser les traitements, recevoir des rappels personnalisés et suivre les prises de chaque membre de la famille.": "SantéVibes is a mobile app for tracking medication across a family. It helps organize treatments, receive personalized reminders, and follow each family member’s doses.",
+    "Développement mobile & backend": "Mobile & backend development",
+    "Dépôt GitHub de SantéVibes": "SantéVibes GitHub repository",
+    "Suivi des traitements et des prises pour les membres de la famille": "Track treatments and doses for family members",
+    "Rappels personnalisés pour les prochaines prises": "Personalized reminders for upcoming doses",
+    "Vue d’ensemble des traitements et de leur progression": "Overview of treatments and progress",
+    "Alertes en cas de prise oubliée": "Alerts for missed doses",
     "Page d’accueil de la plateforme de formation en ligne": "Homepage of the online learning platform",
     "Conception frontend": "Frontend design",
     "Projet frontend & design": "Frontend & design project",
     "Site de formation en ligne": "Online learning website",
     "Exercice de conception visuelle et de pratique frontend autour d’un site de formation en ligne, réalisé pendant mon stage chez HKDIGITALS.": "A visual design and frontend practice project for an online learning website, created during my internship at HKDIGITALS.",
+    "Voir le dépôt GitHub": "View GitHub repository",
     "Technologies utilisées pour le site de formation": "Technologies used for the learning website",
     "Refonte web · UI/UX": "Website redesign · UI/UX",
     "Une plateforme, plusieurs usages.": "One platform, many uses.",
@@ -227,6 +239,7 @@ const englishTranslations = {
     "Voir les dépôts GitHub": "View GitHub repositories",
     "Le code source du projet est disponible sur GitHub.": "The project source code is available on GitHub.",
     "Code source": "Source code",
+    "Lien": "Link",
     "Explorer les dépôts GitHub": "Explore the GitHub repositories",
     "Consultez séparément le frontend de l’application et son backend.": "Explore the app frontend and backend separately.",
     "Interface et application SalleEvent.": "SalleEvent interface and app.",
@@ -336,6 +349,10 @@ const englishPageMetadata = {
     "tenysy.html": {
         title: "TENYSY | Léandre Ngadji",
         description: "Discover the Les Anges du Digital website redesign and TENYSY showcase, created with Figma, React, and Tailwind CSS."
+    },
+    "santevibes.html": {
+        title: "SantéVibes | Léandre Ngadji",
+        description: "Explore SantéVibes, a mobile app for family medication tracking and personalized reminders."
     },
     "services.html": {
         title: "Services | Léandre Ngadji",
