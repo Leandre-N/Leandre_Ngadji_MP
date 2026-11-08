@@ -107,7 +107,7 @@ const englishTranslations = {
     "Services": "Services",
     "Contact": "Contact",
     "Bonjour, moi c'est": "Hello, I'm",
-    "Je conçois des expériences numériques et développe des applications web et mobiles qui donnent vie aux idées.": "I design digital experiences and build web and mobile applications that bring ideas to life.",
+    "Je conçois et développe des solutions numériques en associant créativité, curiosité et technologie.": "I design and develop digital solutions by combining creativity, curiosity, and technology.",
     "Développeur web et mobile junior, actuellement en troisième année de Licence de Technologie en Génie logiciel à l'IUT de Douala, je m'intéresse particulièrement au": "Junior web and mobile developer, currently in my third year of a Software Engineering degree at the IUT of Douala, with a particular interest in",
     "développement mobile avec Flutter": "mobile development with Flutter",
     "et à la conception de solutions backend.": "and backend solution design.",
