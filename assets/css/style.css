@@ -5860,6 +5860,11 @@ body.dark-mode .salleevent-access-content > p:not(.salleevent-section-kicker, .s
     line-height: 1.6;
 }
 
+.salleevent-repository-links .salleevent-repository-heading {
+    margin-bottom: 2px;
+    font-size: 14px;
+}
+
 .salleevent-repository-links a {
     color: var(--salleevent-blue);
     overflow-wrap: anywhere;

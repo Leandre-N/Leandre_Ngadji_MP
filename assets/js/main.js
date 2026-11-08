@@ -220,6 +220,7 @@ const englishTranslations = {
     "UI/UX & développement frontend": "UI/UX & frontend development",
     "Refonte web · Présentation de TENYSY": "Website redesign · TENYSY showcase",
     "Code source :": "Source code:",
+    "GitHub :": "GitHub:",
     "Dépôt GitHub du projet TENYSY": "TENYSY project GitHub repository",
     "Objectifs du projet": "Project goals",
     "Moderniser l’identité numérique de Les Anges du Digital": "Modernize Les Anges du Digital’s digital identity",
