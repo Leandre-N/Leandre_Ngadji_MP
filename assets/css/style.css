@@ -4281,6 +4281,32 @@ body.dark-mode .tech-js {
     line-height: 1;
 }
 
+.portfolio-card-cta {
+    margin-top: 17px;
+    padding-top: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #e7edf5;
+    color: #0755b8;
+    font-size: 12px;
+    font-weight: 800;
+    transition: color 0.2s ease, gap 0.2s ease;
+}
+
+.portfolio-card-cta:hover {
+    color: #5e35b1;
+}
+
+.portfolio-card-cta span {
+    font-size: 18px;
+    transition: transform 0.2s ease;
+}
+
+.portfolio-card-cta:hover span {
+    transform: translateX(4px);
+}
+
 .portfolio-learning-preview {
     display: grid;
     place-items: center;
@@ -4459,6 +4485,11 @@ body.dark-mode .portfolio-tags li {
     background: #243c5a;
 }
 
+body.dark-mode .portfolio-card-cta {
+    border-color: #365578;
+    color: #a9cdfb;
+}
+
 @media (max-width: 850px) {
     .portfolio-main {
         padding: 95px 28px 42px;
@@ -4533,6 +4564,1380 @@ body.dark-mode .portfolio-tags li {
 
     .portfolio-card-content {
         padding: 16px;
+    }
+}
+
+
+/* ==========================================
+   21. DETAIL PROJET SALLEEVENT
+========================================== */
+
+.salleevent-main {
+    --salleevent-ink: #14213d;
+    --salleevent-muted: #56657d;
+    --salleevent-blue: #1768ce;
+    --salleevent-purple: #8737e8;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 105px 56px 52px;
+    overflow: hidden;
+    background:
+        radial-gradient(ellipse at 82% 12%, rgba(216, 229, 255, 0.7), transparent 28%),
+        linear-gradient(135deg, #fff 0%, #f8faff 63%, #f2f6ff 100%);
+}
+
+.salleevent-hero {
+    min-height: 570px;
+    display: grid;
+    grid-template-columns: minmax(0, 1.05fr) minmax(330px, 0.95fr);
+    align-items: center;
+    gap: 48px;
+}
+
+.salleevent-hero-copy {
+    position: relative;
+    z-index: 1;
+    padding: 10px 0 35px;
+}
+
+.salleevent-back-link,
+.salleevent-back-bottom a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--salleevent-muted);
+    font-size: 13px;
+    font-weight: 700;
+    transition: color 0.2s ease, gap 0.2s ease;
+}
+
+.salleevent-back-link:hover,
+.salleevent-back-bottom a:hover {
+    gap: 12px;
+    color: var(--salleevent-blue);
+}
+
+.salleevent-eyebrow {
+    width: fit-content;
+    margin: 35px 0 15px;
+    padding: 8px 13px;
+    border: 1px solid #dce8fb;
+    border-radius: 30px;
+    color: #29598f;
+    background: #edf4ff;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 0.25px;
+}
+
+.salleevent-eyebrow span {
+    margin-right: 5px;
+    color: var(--salleevent-purple);
+}
+
+.salleevent-hero h1 {
+    margin: 0 0 7px;
+    color: var(--salleevent-ink);
+    font-family: 'Manrope', sans-serif;
+    font-size: clamp(52px, 6vw, 78px);
+    font-weight: 800;
+    letter-spacing: -4px;
+    line-height: 1.04;
+}
+
+.salleevent-tagline {
+    margin-bottom: 17px;
+    color: #5e35b1;
+    font-family: 'Manrope', sans-serif;
+    font-size: clamp(20px, 2.2vw, 27px);
+    font-weight: 800;
+    letter-spacing: -0.5px;
+}
+
+.salleevent-intro {
+    max-width: 570px;
+    margin-bottom: 26px;
+    color: var(--salleevent-muted);
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.salleevent-meta {
+    max-width: 570px;
+    margin: 0 0 25px;
+    padding: 16px 0;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    border-top: 1px solid #dfe7f2;
+    border-bottom: 1px solid #dfe7f2;
+}
+
+.salleevent-meta div {
+    padding: 0 12px;
+    border-left: 1px solid #dfe7f2;
+}
+
+.salleevent-meta div:first-child {
+    padding-left: 0;
+    border-left: 0;
+}
+
+.salleevent-meta dt {
+    margin-bottom: 5px;
+    color: #8490a2;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 0.7px;
+    text-transform: uppercase;
+}
+
+.salleevent-meta dd {
+    margin: 0;
+    color: var(--salleevent-ink);
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.salleevent-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 11px;
+}
+
+.salleevent-button {
+    min-height: 48px;
+    padding: 0 19px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: 800;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.salleevent-button:hover {
+    transform: translateY(-2px);
+}
+
+.salleevent-button-primary {
+    color: #fff;
+    background: linear-gradient(110deg, #1768ce, #743ee0);
+    box-shadow: 0 8px 18px rgba(67, 87, 190, 0.18);
+}
+
+.salleevent-button-primary:hover {
+    box-shadow: 0 12px 24px rgba(67, 87, 190, 0.28);
+}
+
+.salleevent-button-secondary {
+    border-color: #ccd7e6;
+    color: var(--salleevent-ink);
+    background: rgba(255, 255, 255, 0.6);
+}
+
+.salleevent-button-secondary:hover {
+    background: #fff;
+}
+
+.salleevent-access-note {
+    margin: 12px 0 0;
+    color: #7a8799;
+    font-size: 11px;
+    line-height: 1.6;
+}
+
+.salleevent-visual {
+    min-height: 510px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    isolation: isolate;
+}
+
+.salleevent-visual::before {
+    width: min(390px, 83%);
+    aspect-ratio: 1;
+    position: absolute;
+    z-index: -2;
+    border-radius: 50%;
+    background: linear-gradient(145deg, rgba(218, 227, 255, 0.9), rgba(235, 220, 255, 0.65));
+    content: "";
+}
+
+.salleevent-visual::after {
+    width: 76%;
+    height: 66%;
+    position: absolute;
+    z-index: -1;
+    bottom: 10%;
+    border-radius: 48% 52% 28% 32%;
+    background: linear-gradient(145deg, rgba(94, 122, 224, 0.12), rgba(143, 74, 221, 0.12));
+    content: "";
+    transform: rotate(-12deg);
+}
+
+.salleevent-visual img {
+    width: min(300px, 68%);
+    max-height: 500px;
+    object-fit: contain;
+    filter: drop-shadow(0 24px 24px rgba(27, 38, 71, 0.25));
+    animation: salleevent-float 5s ease-in-out infinite;
+}
+
+.salleevent-visual-label,
+.salleevent-visual-caption {
+    position: absolute;
+    z-index: 1;
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    border: 1px solid rgba(226, 233, 246, 0.9);
+    border-radius: 14px;
+    color: #253653;
+    background: rgba(255, 255, 255, 0.91);
+    box-shadow: 0 12px 28px rgba(29, 47, 86, 0.12);
+    font-size: 11px;
+    font-weight: 800;
+    backdrop-filter: blur(12px);
+}
+
+.salleevent-visual-label {
+    top: 16%;
+    right: -1%;
+    padding: 12px 15px;
+}
+
+.salleevent-visual-label span {
+    color: var(--salleevent-purple);
+    font-size: 18px;
+}
+
+.salleevent-visual-caption {
+    bottom: 8%;
+    left: 0;
+    padding: 12px 15px;
+}
+
+.salleevent-status-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #39b980;
+    box-shadow: 0 0 0 4px rgba(57, 185, 128, 0.12);
+}
+
+.salleevent-orbit {
+    position: absolute;
+    z-index: -1;
+    border: 1px solid rgba(112, 124, 208, 0.22);
+    border-radius: 50%;
+}
+
+.salleevent-orbit-one {
+    width: 440px;
+    height: 440px;
+}
+
+.salleevent-orbit-two {
+    width: 500px;
+    height: 500px;
+    border-style: dashed;
+    opacity: 0.55;
+}
+
+@keyframes salleevent-float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-9px); }
+}
+
+.salleevent-section {
+    padding: 74px 0 76px;
+}
+
+.salleevent-section-heading {
+    max-width: 670px;
+    margin: 0 auto 34px;
+    text-align: center;
+}
+
+.salleevent-section-kicker {
+    margin-bottom: 9px;
+    color: var(--salleevent-blue);
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+}
+
+.salleevent-section-heading h2,
+.salleevent-tech-copy h2,
+.salleevent-access h2 {
+    margin-bottom: 12px;
+    color: var(--salleevent-ink);
+    font-family: 'Manrope', sans-serif;
+    font-size: clamp(28px, 3.2vw, 39px);
+    font-weight: 800;
+    letter-spacing: -1.3px;
+    line-height: 1.2;
+}
+
+.salleevent-section-heading > p:last-child,
+.salleevent-tech-copy > p:last-child {
+    margin: 0;
+    color: var(--salleevent-muted);
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.salleevent-feature-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.salleevent-feature-card {
+    min-height: 205px;
+    padding: 23px 20px;
+    border: 1px solid #e6ecf5;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.78);
+    box-shadow: 0 8px 24px rgba(28, 48, 86, 0.045);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.salleevent-feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 14px 28px rgba(28, 48, 86, 0.1);
+}
+
+.salleevent-feature-icon {
+    width: 43px;
+    height: 43px;
+    margin-bottom: 19px;
+    display: grid;
+    place-items: center;
+    border-radius: 13px;
+    color: #6841cb;
+    background: #f0ebff;
+}
+
+.salleevent-feature-card:nth-child(even) .salleevent-feature-icon {
+    color: #1768ce;
+    background: #e8f2ff;
+}
+
+.salleevent-feature-icon svg {
+    width: 22px;
+    height: 22px;
+    fill: none;
+    stroke: currentColor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 1.7;
+}
+
+.salleevent-feature-card h3 {
+    margin: 0 0 8px;
+    color: var(--salleevent-ink);
+    font-family: 'Manrope', sans-serif;
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.salleevent-feature-card p {
+    margin: 0;
+    color: var(--salleevent-muted);
+    font-size: 12px;
+    line-height: 1.65;
+}
+
+.salleevent-tech-section {
+    padding: 37px 38px;
+    display: grid;
+    grid-template-columns: minmax(230px, 0.8fr) minmax(0, 1.2fr);
+    align-items: center;
+    gap: 35px;
+    border: 1px solid #e1e9f5;
+    border-radius: 24px;
+    background: rgba(255, 255, 255, 0.75);
+}
+
+.salleevent-tech-copy h2 {
+    margin-bottom: 10px;
+    font-size: clamp(25px, 2.5vw, 32px);
+}
+
+.salleevent-tech-copy > p:last-child {
+    font-size: 13px;
+}
+
+.salleevent-tech-list {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 11px;
+    list-style: none;
+}
+
+.salleevent-tech-list li {
+    min-height: 55px;
+    padding: 10px 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #e3eaf4;
+    border-radius: 13px;
+    color: #293a56;
+    background: #fff;
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.salleevent-tech-list img,
+.salleevent-jwt-icon {
+    width: 25px;
+    height: 25px;
+    flex: 0 0 25px;
+    object-fit: contain;
+}
+
+.salleevent-jwt-icon {
+    display: grid;
+    place-items: center;
+    border-radius: 7px;
+    color: #fff;
+    background: #44546a;
+    font-size: 20px;
+}
+
+.salleevent-repositories {
+    padding: 75px 0 0;
+}
+
+.salleevent-repositories .salleevent-section-heading {
+    margin-bottom: 28px;
+}
+
+.salleevent-repository-grid {
+    max-width: 860px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.salleevent-repository-card {
+    min-width: 0;
+    padding: 22px;
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    border: 1px solid #e1e9f5;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.78);
+    box-shadow: 0 8px 24px rgba(28, 48, 86, 0.045);
+}
+
+.salleevent-repository-mark {
+    width: 44px;
+    height: 44px;
+    flex: 0 0 44px;
+    display: grid;
+    place-items: center;
+    border-radius: 13px;
+    color: #fff;
+    background: #1768ce;
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.salleevent-repository-mark-backend {
+    background: #7444cf;
+}
+
+.salleevent-repository-copy h3 {
+    margin: 0 0 5px;
+    color: var(--salleevent-ink);
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.salleevent-repository-copy p {
+    margin: 0 0 13px;
+    color: var(--salleevent-muted);
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+.salleevent-repository-copy a {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    color: var(--salleevent-blue);
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.salleevent-repository-copy a:hover {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.salleevent-repository-copy a:focus-visible {
+    outline: 3px solid rgba(23, 104, 206, 0.4);
+    outline-offset: 4px;
+    border-radius: 3px;
+}
+
+.salleevent-access {
+    min-height: 300px;
+    margin-top: 74px;
+    padding: 43px 50px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    border: 1px solid #e0eafe;
+    border-radius: 25px;
+    background: linear-gradient(110deg, #eaf3ff 0%, #f0edff 100%);
+}
+
+.salleevent-access-content {
+    max-width: 690px;
+    position: relative;
+    z-index: 1;
+}
+
+.salleevent-access h2 {
+    max-width: 580px;
+    margin-bottom: 12px;
+}
+
+.salleevent-access-content > p:not(.salleevent-section-kicker, .salleevent-access-note) {
+    max-width: 570px;
+    margin: 0 0 22px;
+    color: #4f5f78;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.salleevent-access-art {
+    width: 290px;
+    height: 260px;
+    position: absolute;
+    right: 5%;
+    bottom: -25px;
+    display: grid;
+    place-items: center;
+    opacity: 0.75;
+}
+
+.salleevent-access-circle {
+    width: 230px;
+    height: 230px;
+    position: absolute;
+    border: 1px solid rgba(96, 123, 201, 0.32);
+    border-radius: 50%;
+    background: radial-gradient(circle at 35% 30%, rgba(255, 255, 255, 0.84), rgba(189, 205, 250, 0.22) 70%);
+    box-shadow: 0 0 0 23px rgba(255, 255, 255, 0.18), 0 0 0 48px rgba(255, 255, 255, 0.13);
+}
+
+.salleevent-access-pin {
+    position: relative;
+    color: #7252ce;
+    font-size: 78px;
+    line-height: 1;
+    transform: translateY(-8px);
+}
+
+.salleevent-access-sparkle {
+    position: absolute;
+    top: 39px;
+    right: 42px;
+    color: #fff;
+    font-size: 36px;
+}
+
+.salleevent-back-bottom {
+    padding-top: 29px;
+    text-align: center;
+}
+
+body.dark-mode .salleevent-main {
+    --salleevent-ink: #f1f5fb;
+    --salleevent-muted: #b7c5d8;
+    background: radial-gradient(ellipse at 82% 12%, rgba(48, 65, 116, 0.42), transparent 28%), linear-gradient(135deg, #0b1729 0%, #101f36 100%);
+}
+
+body.dark-mode .salleevent-eyebrow,
+body.dark-mode .salleevent-feature-icon {
+    border-color: #344967;
+    color: #c4d9ff;
+    background: #243954;
+}
+
+body.dark-mode .salleevent-tagline,
+body.dark-mode .salleevent-eyebrow span {
+    color: #c6adff;
+}
+
+body.dark-mode .salleevent-meta,
+body.dark-mode .salleevent-meta div {
+    border-color: #34445c;
+}
+
+body.dark-mode .salleevent-button-secondary,
+body.dark-mode .salleevent-feature-card,
+body.dark-mode .salleevent-tech-section,
+body.dark-mode .salleevent-tech-list li {
+    border-color: #34445c;
+    color: #e5edf8;
+    background: #172a43;
+}
+
+body.dark-mode .salleevent-repository-card {
+    border-color: #34445c;
+    background: #172a43;
+}
+
+body.dark-mode .salleevent-repository-copy a {
+    color: #8ebaff;
+}
+
+body.dark-mode .salleevent-feature-card p,
+body.dark-mode .salleevent-tech-copy > p:last-child {
+    color: #b7c5d8;
+}
+
+body.dark-mode .salleevent-visual-label,
+body.dark-mode .salleevent-visual-caption {
+    border-color: #3a4b64;
+    color: #e4ecf8;
+    background: rgba(23, 42, 67, 0.93);
+}
+
+body.dark-mode .salleevent-access {
+    border-color: #33486a;
+    background: linear-gradient(110deg, #1a3454 0%, #2a2850 100%);
+}
+
+body.dark-mode .salleevent-access-content > p:not(.salleevent-section-kicker, .salleevent-access-note) {
+    color: #c1cde0;
+}
+
+@media (max-width: 900px) {
+    .salleevent-main {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+
+    .salleevent-hero {
+        grid-template-columns: minmax(0, 1fr) minmax(280px, 0.8fr);
+        gap: 22px;
+    }
+
+    .salleevent-visual-label {
+        right: -3%;
+    }
+
+    .salleevent-feature-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .salleevent-tech-section {
+        grid-template-columns: 1fr;
+    }
+
+    .salleevent-repository-grid {
+        max-width: 600px;
+    }
+}
+
+@media (max-width: 650px) {
+    .salleevent-main {
+        padding: 91px 19px 35px;
+    }
+
+    .salleevent-hero {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .salleevent-hero-copy {
+        padding: 0;
+    }
+
+    .salleevent-eyebrow {
+        margin-top: 25px;
+    }
+
+    .salleevent-hero h1 {
+        font-size: 58px;
+        letter-spacing: -3px;
+    }
+
+    .salleevent-meta {
+        gap: 0;
+    }
+
+    .salleevent-meta div {
+        padding-right: 7px;
+        padding-left: 9px;
+    }
+
+    .salleevent-meta dd {
+        font-size: 11px;
+    }
+
+    .salleevent-visual {
+        min-height: 435px;
+        margin-top: 10px;
+    }
+
+    .salleevent-visual img {
+        width: min(265px, 68%);
+        max-height: 410px;
+    }
+
+    .salleevent-orbit-one {
+        width: 350px;
+        height: 350px;
+    }
+
+    .salleevent-orbit-two {
+        width: 400px;
+        height: 400px;
+    }
+
+    .salleevent-visual-label {
+        top: 12%;
+        right: 0;
+    }
+
+    .salleevent-visual-caption {
+        bottom: 3%;
+    }
+
+    .salleevent-section {
+        padding: 48px 0;
+    }
+
+    .salleevent-feature-grid {
+        gap: 11px;
+    }
+
+    .salleevent-feature-card {
+        min-height: 190px;
+        padding: 17px 15px;
+    }
+
+    .salleevent-feature-card h3 {
+        font-size: 13px;
+    }
+
+    .salleevent-feature-card p {
+        font-size: 11px;
+    }
+
+    .salleevent-tech-section {
+        padding: 25px 19px;
+        gap: 22px;
+    }
+
+    .salleevent-tech-list {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .salleevent-repositories {
+        padding-top: 48px;
+    }
+
+    .salleevent-repository-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .salleevent-access {
+        min-height: 360px;
+        margin-top: 48px;
+        padding: 30px 23px;
+        align-items: flex-start;
+    }
+
+    .salleevent-access-art {
+        right: -46px;
+        bottom: -105px;
+        transform: scale(0.75);
+    }
+
+    .salleevent-access-content {
+        max-width: 100%;
+    }
+
+    .salleevent-access .salleevent-button {
+        position: relative;
+        z-index: 1;
+    }
+}
+
+@media (max-width: 380px) {
+    .salleevent-main {
+        padding-right: 14px;
+        padding-left: 14px;
+    }
+
+    .salleevent-actions {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .salleevent-button {
+        width: 100%;
+    }
+
+    .salleevent-meta dt {
+        font-size: 9px;
+    }
+
+    .salleevent-meta dd {
+        font-size: 10px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .salleevent-visual img {
+        animation: none;
+    }
+
+    .salleevent-feature-card,
+    .salleevent-button,
+    .salleevent-back-link,
+    .salleevent-back-bottom a {
+        transition: none;
+    }
+}
+
+/* SalleEvent page — composition inspirée de la maquette */
+.salleevent-main {
+    padding-top: 82px;
+    background:
+        radial-gradient(ellipse at 100% 57%, rgba(216, 229, 255, 0.62), transparent 25%),
+        linear-gradient(135deg, #fff 0%, #f8faff 68%, #f3f7ff 100%);
+}
+
+.salleevent-main > .salleevent-back-link {
+    min-height: 34px;
+    margin-bottom: 14px;
+    padding: 0 13px;
+    border-radius: 20px;
+    color: #1768ce;
+    background: #e8f0ff;
+}
+
+.salleevent-banner {
+    min-height: 230px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    border-radius: 17px;
+    color: #fff;
+    background:
+        radial-gradient(circle at 54% 115%, rgba(62, 139, 255, 0.92) 0 18%, transparent 18.5%),
+        radial-gradient(circle at 7% 0%, rgba(103, 163, 255, 0.5) 0 21%, transparent 21.5%),
+        linear-gradient(112deg, #174aab 0%, #1768d4 52%, #8ab8ff 100%);
+    box-shadow: 0 12px 30px rgba(27, 86, 177, 0.15);
+    isolation: isolate;
+}
+
+.salleevent-banner::before,
+.salleevent-banner::after {
+    position: absolute;
+    z-index: -1;
+    border: 1px solid rgba(255, 255, 255, 0.13);
+    border-radius: 50%;
+    content: "";
+}
+
+.salleevent-banner::before {
+    width: 440px;
+    height: 440px;
+    top: -270px;
+    left: 15%;
+    box-shadow: 0 0 0 42px rgba(255, 255, 255, 0.045), 0 0 0 88px rgba(255, 255, 255, 0.035);
+}
+
+.salleevent-banner::after {
+    width: 260px;
+    height: 260px;
+    right: -80px;
+    bottom: -180px;
+    box-shadow: 0 0 0 35px rgba(255, 255, 255, 0.08);
+}
+
+.salleevent-banner-copy {
+    width: 47%;
+    position: relative;
+    z-index: 1;
+    padding: 22px 0 22px 9%;
+}
+
+.salleevent-banner-icon {
+    width: 57px;
+    height: 57px;
+    margin-bottom: 2px;
+    fill: none;
+    stroke: currentColor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 5;
+}
+
+.salleevent-banner h1 {
+    margin: 0 0 3px;
+    color: #fff;
+    font-family: 'Manrope', sans-serif;
+    font-size: clamp(36px, 5vw, 52px);
+    font-weight: 800;
+    letter-spacing: -2px;
+    line-height: 1.05;
+}
+
+.salleevent-banner-copy p {
+    margin: 0;
+    color: #fff;
+    font-family: 'Manrope', sans-serif;
+    font-size: clamp(17px, 2.2vw, 22px);
+    font-weight: 700;
+    line-height: 1.22;
+    text-align: center;
+    width: 225px;
+}
+
+.salleevent-banner-phones {
+    width: 53%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.salleevent-phone {
+    width: auto;
+    height: 310px;
+    position: absolute;
+    bottom: -55px;
+    object-fit: contain;
+    filter: drop-shadow(0 13px 15px rgba(5, 23, 61, 0.3));
+}
+
+.salleevent-phone-back {
+    right: 30%;
+    opacity: 0.8;
+    transform: rotate(-10deg) scale(0.88);
+}
+
+.salleevent-phone-front {
+    right: 5%;
+    transform: rotate(9deg);
+}
+
+.salleevent-overview {
+    padding: 25px 3% 12px;
+    display: grid;
+    grid-template-columns: minmax(0, 1.15fr) minmax(240px, 0.85fr);
+    align-items: start;
+    gap: 42px;
+}
+
+.salleevent-overview h2,
+.salleevent-technologies h2 {
+    margin: 0 0 5px;
+    padding-left: 15px;
+    position: relative;
+    color: #102a62;
+    font-family: 'Manrope', sans-serif;
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: -0.6px;
+}
+
+.salleevent-overview h2::before,
+.salleevent-technologies h2::before {
+    width: 5px;
+    position: absolute;
+    top: 2px;
+    bottom: 3px;
+    left: 0;
+    border-radius: 5px;
+    background: #1768ff;
+    content: "";
+}
+
+.salleevent-overview .salleevent-tagline {
+    margin: 0 0 9px;
+    color: #1768ff;
+    font-size: 15px;
+    letter-spacing: 0;
+}
+
+.salleevent-intro {
+    max-width: 610px;
+    margin-bottom: 15px;
+    color: #172b50;
+    font-size: 13px;
+    line-height: 1.55;
+}
+
+.salleevent-meta {
+    max-width: 610px;
+    margin-bottom: 16px;
+    padding: 10px 0;
+}
+
+.salleevent-meta dt {
+    color: #73819b;
+}
+
+.salleevent-meta dd {
+    color: #172b50;
+}
+
+.salleevent-actions {
+    gap: 9px;
+}
+
+.salleevent-button {
+    min-height: 42px;
+    padding: 0 15px;
+    font-size: 11px;
+}
+
+.salleevent-button-primary {
+    background: linear-gradient(110deg, #0755bd, #1768ce);
+}
+
+.salleevent-button-secondary {
+    border-color: #b8c9e6;
+}
+
+.salleevent-repository-links {
+    display: grid;
+    justify-items: start;
+    gap: 8px;
+}
+
+.salleevent-repository-links p {
+    margin: 0;
+    color: var(--salleevent-ink);
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.salleevent-repository-links a {
+    color: var(--salleevent-blue);
+    overflow-wrap: anywhere;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.salleevent-contact-link {
+    margin: 10px 0 0 3px;
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    color: #315a97;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.salleevent-features {
+    padding: 0;
+}
+
+.salleevent-features h2,
+.salleevent-technologies h2 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.salleevent-features ul {
+    margin: 0;
+    padding: 0 0 0 17px;
+    list-style: none;
+}
+
+.salleevent-features li {
+    margin: 0 0 6px;
+    position: relative;
+    color: #172b50;
+    font-size: 12px;
+    line-height: 1.45;
+}
+
+.salleevent-features li::before {
+    position: absolute;
+    left: -16px;
+    color: #1768ce;
+    font-weight: 800;
+    content: "–";
+}
+
+.salleevent-technologies {
+    padding: 16px 3% 2px;
+}
+
+.salleevent-tech-list {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: 9px;
+}
+
+.salleevent-tech-list li {
+    min-height: 48px;
+    padding: 8px 11px;
+    justify-content: center;
+    border: 0;
+    border-radius: 28px;
+    background: #eaf0fc;
+    font-size: 11px;
+}
+
+.salleevent-tech-list img,
+.salleevent-jwt-icon {
+    width: 24px;
+    height: 24px;
+    flex-basis: 24px;
+}
+
+.salleevent-jwt-icon {
+    border-radius: 50%;
+    color: #1768ce;
+    background: transparent;
+    font-size: 9px;
+    font-weight: 800;
+}
+
+body.dark-mode .salleevent-main {
+    background:
+        radial-gradient(ellipse at 100% 57%, rgba(48, 65, 116, 0.42), transparent 25%),
+        linear-gradient(135deg, #0b1729 0%, #101f36 100%);
+}
+
+body.dark-mode .salleevent-main > .salleevent-back-link {
+    color: #a9ccff;
+    background: #203756;
+}
+
+body.dark-mode .salleevent-overview h2,
+body.dark-mode .salleevent-features li,
+body.dark-mode .salleevent-meta dd,
+body.dark-mode .salleevent-intro {
+    color: #e8effa;
+}
+
+body.dark-mode .salleevent-tech-list li {
+    color: #e8effa;
+    background: #1b2e49;
+}
+
+body.dark-mode .salleevent-contact-link {
+    color: #a9ccff;
+}
+
+@media (max-width: 900px) {
+    .salleevent-overview {
+        grid-template-columns: 1fr;
+        gap: 23px;
+    }
+
+    .salleevent-features {
+        padding-left: 3px;
+    }
+
+    .salleevent-tech-list {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 650px) {
+    .salleevent-main {
+        padding-top: 84px;
+    }
+
+    .salleevent-banner {
+        min-height: 208px;
+    }
+
+    .salleevent-banner-copy {
+        width: 56%;
+        padding-left: 6%;
+    }
+
+    .salleevent-banner-icon {
+        width: 42px;
+        height: 42px;
+    }
+
+    .salleevent-banner h1 {
+        font-size: clamp(30px, 8vw, 43px);
+    }
+
+    .salleevent-banner-copy p {
+        width: 175px;
+        font-size: 16px;
+    }
+
+    .salleevent-banner-phones {
+        width: 51%;
+    }
+
+    .salleevent-phone {
+        height: 250px;
+        bottom: -35px;
+    }
+
+    .salleevent-phone-back {
+        right: 21%;
+    }
+
+    .salleevent-phone-front {
+        right: -5%;
+    }
+
+    .salleevent-overview {
+        padding: 22px 3% 8px;
+    }
+
+    .salleevent-overview h2 {
+        font-size: 23px;
+    }
+
+    .salleevent-meta {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .salleevent-meta dd {
+        font-size: 10px;
+    }
+
+    .salleevent-actions {
+        align-items: flex-start;
+        flex-direction: row;
+    }
+
+    .salleevent-button {
+        width: auto;
+        padding: 0 12px;
+        font-size: 10px;
+    }
+
+    .salleevent-technologies {
+        padding-top: 12px;
+    }
+
+    .salleevent-tech-list {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+.tenysy-page .salleevent-main {
+    --salleevent-ink: #14213d;
+    --salleevent-muted: #56657d;
+    --salleevent-blue: #1768ce;
+}
+
+.tenysy-banner {
+    background:
+        radial-gradient(circle at 54% 115%, rgba(62, 139, 255, 0.92) 0 18%, transparent 18.5%),
+        radial-gradient(circle at 7% 0%, rgba(103, 163, 255, 0.5) 0 21%, transparent 21.5%),
+        linear-gradient(112deg, #174aab 0%, #1768d4 52%, #8ab8ff 100%);
+    box-shadow: 0 12px 30px rgba(27, 86, 177, 0.15);
+}
+
+.tenysy-banner .salleevent-banner-copy {
+    width: 50%;
+    padding-left: 6%;
+}
+
+.tenysy-project-badge {
+    display: inline-flex;
+    margin-bottom: 12px;
+    padding: 7px 12px;
+    border: 1px solid rgba(255, 255, 255, 0.42);
+    border-radius: 20px;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.12);
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.tenysy-banner .salleevent-banner-copy p {
+    width: auto;
+    color: #fff;
+    font-size: clamp(15px, 2vw, 20px);
+    text-align: left;
+}
+
+.tenysy-banner-visual {
+    width: 52%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+    mask-image: linear-gradient(90deg, transparent 0%, #000 19%);
+}
+
+.tenysy-banner-visual img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: 58% center;
+}
+
+.tenysy-page .salleevent-overview h2::before,
+.tenysy-page .salleevent-technologies h2::before {
+    background: #1768ff;
+}
+
+.tenysy-page .salleevent-overview .salleevent-tagline {
+    color: #1768ff;
+}
+
+@media (max-width: 650px) {
+    .tenysy-banner .salleevent-banner-copy {
+        width: 59%;
+        padding-left: 5%;
+    }
+
+    .tenysy-project-badge {
+        margin-bottom: 8px;
+        padding: 6px 9px;
+        font-size: 8px;
+    }
+
+    .tenysy-banner .salleevent-banner-copy p {
+        max-width: 145px;
+        font-size: 14px;
+    }
+
+    .tenysy-banner-visual {
+        width: 52%;
+    }
+
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .salleevent-phone {
+        animation: none;
     }
 }
 

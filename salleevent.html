@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Découvrez SalleEvent, une application mobile de recherche et de réservation de salles événementielles au Cameroun, développée avec Flutter et Node.js.">
+    <title>SalleEvent | Léandre Ngadji</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="portfolio-page salleevent-page">
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo" aria-label="Accueil — Léandre Ngadji">
+                <span class="logo-icon">LN</span>
+                <span class="logo-name">Léandre Ngadji</span>
+            </a>
+
+            <nav class="nav-menu" id="navMenu" aria-label="Navigation principale">
+                <a href="index.html" class="nav-link">Accueil</a>
+                <a href="about.html" class="nav-link">À propos</a>
+                <a href="skills.html" class="nav-link">Compétences</a>
+                <a href="projects.html" class="nav-link active" aria-current="page">Projets</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="nav-options">
+                <div class="language-selector">
+                    <span aria-hidden="true">🇫🇷</span>
+                    <select id="languageSelect" aria-label="Choisir la langue">
+                        <option value="fr">FR</option>
+                        <option value="en">EN</option>
+                    </select>
+                </div>
+                <span class="nav-separator" aria-hidden="true"></span>
+                <button class="theme-toggle" id="themeToggle" aria-label="Changer de thème">
+                    <span class="theme-icon" aria-hidden="true">☀</span>
+                    <span class="theme-circle" aria-hidden="true"></span>
+                </button>
+            </div>
+
+            <button class="hamburger" id="hamburger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="navMenu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <main class="salleevent-main">
+        <a class="salleevent-back-link" href="projects.html">← Retour aux projets</a>
+
+        <section class="salleevent-banner" aria-labelledby="salleeventTitle">
+            <div class="salleevent-banner-copy">
+                <svg class="salleevent-banner-icon" viewBox="0 0 64 64" aria-hidden="true">
+                    <rect x="8" y="13" width="48" height="44" rx="6"></rect>
+                    <path d="M20 7v13M44 7v13M8 27h48M22 40l7 7 14-14"></path>
+                </svg>
+                <h1 id="salleeventTitle">SalleEvent</h1>
+                <p>Réservez votre salle parfaite.</p>
+            </div>
+            <div class="salleevent-banner-phones" role="img" aria-label="Écrans de SalleEvent présentant la recherche de salles et les annonces de lieux à Douala">
+                <img class="salleevent-phone salleevent-phone-back" src="assets/projects/salle-event.png" alt="" aria-hidden="true">
+                <img class="salleevent-phone salleevent-phone-front" src="assets/projects/salle-event.png" alt="" aria-hidden="true">
+            </div>
+        </section>
+
+        <section class="salleevent-overview" aria-labelledby="overviewTitle">
+            <div class="salleevent-overview-main">
+                <h2 id="overviewTitle">SalleEvent</h2>
+                <p class="salleevent-tagline">Réservez votre salle parfaite.</p>
+                <p class="salleevent-intro">SalleEvent est une application mobile conçue pour faciliter la recherche, la réservation et la gestion de salles et d'espaces événementiels au Cameroun.</p>
+
+                <dl class="salleevent-meta">
+                    <div><dt>Période</dt><dd>2025</dd></div>
+                    <div><dt>Rôle</dt><dd>Développeur Full Stack</dd></div>
+                    <div><dt>Type</dt><dd>Application mobile</dd></div>
+                </dl>
+
+                <div class="salleevent-actions salleevent-repository-links" id="depots" aria-label="Dépôts GitHub de SalleEvent">
+                    <p><strong>Frontend :</strong> <a href="https://github.com/Leandre-N/Frontend2026" target="_blank" rel="noopener noreferrer">https://github.com/Leandre-N/Frontend2026</a></p>
+                    <p><strong>Backend :</strong> <a href="https://github.com/Leandre-N/backend2026" target="_blank" rel="noopener noreferrer">https://github.com/Leandre-N/backend2026</a></p>
+                </div>
+                <a class="salleevent-contact-link" href="contact.html">Me contacter <span aria-hidden="true">→</span></a>
+            </div>
+
+            <section class="salleevent-features" aria-labelledby="featuresTitle">
+                <h2 id="featuresTitle">Fonctionnalités</h2>
+                <ul>
+                    <li>Recherche de salles selon différents critères</li>
+                    <li>Réservation et suivi des demandes</li>
+                    <li>Gestion des espaces pour les propriétaires</li>
+                    <li>Notifications en temps réel</li>
+                </ul>
+            </section>
+        </section>
+
+        <section class="salleevent-technologies" aria-labelledby="technologiesTitle">
+            <h2 id="technologiesTitle">Technologies utilisées</h2>
+            <ul class="salleevent-tech-list" aria-label="Technologies utilisées pour SalleEvent">
+                <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flutter/flutter-original.svg" alt="" loading="lazy"><span>Flutter</span></li>
+                <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dart/dart-original.svg" alt="" loading="lazy"><span>Dart</span></li>
+                <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" alt="" loading="lazy"><span>Node.js</span></li>
+                <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg" alt="" loading="lazy"><span>Express.js</span></li>
+                <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" alt="" loading="lazy"><span>MySQL</span></li>
+                <li><span class="salleevent-jwt-icon" aria-hidden="true">JWT</span><span>JWT</span></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <a href="index.html" class="footer-brand" aria-label="Retour à l’accueil">
+                <span class="footer-logo">LN</span>
+                <span class="footer-brand-text"><strong>Léandre Ngadji</strong><small>Développeur web et mobile junior</small></span>
+            </a>
+            <div class="footer-contact">
+                <a href="mailto:ngaleandre6@gmail.com" class="footer-contact-item"><span aria-hidden="true">✉</span><span>ngaleandre6@gmail.com</span></a>
+                <a href="tel:+237687510085" class="footer-contact-item"><span aria-hidden="true">☎</span><span>+237 687510085</span></a>
+            </div>
+            <p class="footer-copyright">© 2026 Léandre Ngadji. Tous droits réservés.</p>
+            <p class="footer-signature">Code <span>·</span> Crée <span>·</span> Inspire<i></i></p>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
